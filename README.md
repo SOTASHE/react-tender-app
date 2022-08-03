@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+<!-- // root component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+import './App.css';
 
-## Available Scripts
+function App() {
 
-In the project directory, you can run:
+  const title = 'Tender App';
 
-### `npm start`
+  //cannot aoutput object direct inside return statement in jsx
+  // const data = {
+    
+  //     id: "36077",
+  //     date: "2021-08-01",
+  //     deadline_date: "2021-08-12",
+  //     title : "Régészeti feltárásokhoz szükséges kézi földmunka",
+  //     category: "constructions",
+  //     "description": "Vállalkozási keretszerződés régészeti feltárásokhoz szükséges régészeti bontómunka ellátására a Szent István Király Múzeum részére Régészeti feltárásokhoz szükséges régészeti bontómunka ellátása a Szent István Király Múzeum részére nettó 299.000.000,-Ft keretösszeg erejéig. V.2) További információk pont folytatása: A nyertes ajánlattevő a szerződésbe foglaltan nyilatkozik arról, hogy a szerződés teljesítéséhez nem vesz igénybe a közbeszerzési eljárásban előírt kizáró okok hatálya alatt álló alvállalkozót. Az ajánlatkérő részére e kötelezettség végrehajtásáról külön nyilatkozatot vagy más igazolást nem kell benyújtani. 8. Amennyiben bármely, az ajánlathoz csatolt okirat, igazolás, nyilatkozat, stb. nem magyar nyelven kerül kiállításra, úgy azt az ajánlattevő magyar nyelvű fordításban is köteles becsatolni. A Kbt. 47. § (2) bekezdése alapján ajánlatkérő a nem magyar nyelven benyújtott dokumentumok ajánlattevő általi felelős fordítását is elfogadja. Felelős fordítás alatt az ajánlatkérő az olyan fordítást érti, amely tekintetében az ajánlattevő képviseletére jogosult személy nyilatkozik, hogy az mindenben megfelel az eredeti szövegnek. A fordítás tartalmának helyességéért az ajánlattevő felel. Az ajánlatok bírálata során a magyar nyelvű dokumentum az irányadó. Ajánlatkérő a fentieken túl elfogadja az eredetileg két nyelven készült iratokat, nyilatkozatokat is. 9. Az ajánlattétel során a különböző devizák forintra történő átszámításánál az ajánlattevőnek a referenciák tekintetében a teljesítés napján érvényes Magyar Nemzeti Bank által meghatározott devizaárfolyamokat kell alkalmaznia. Az ajánlatban szereplő, nem magyar forintban (HUF) megadott összegek tekintetében az átszámítást tartalmazó iratot közvetlenül a kérdéses dokumentum mögé kell csatolni. Bármely okirat, igazolás, nyilatkozat, stb. vonatkozásában csak az alkalmasság megállapításához szükséges sorok (adatok, információk) vonatkozásában szükséges az átszámítást tartalmazó iratot becsatolni. 10. Az ajánlatok összeállításával és benyújtásával kapcsolatban felmerült összes költség az ajánlattevőt terheli. 11. A Kbt. 35. § (2a) bekezdésének megfelelően az ajánlatban vagy több szakaszból álló eljárásban a részvételi jelentkezésben csatolni kell a (2) bekezdés szerinti meghatalmazást tartalmazó okiratot. A meghatalmazásnak ki kell terjednie arra, hogy a közös ajánlattevők vagy részvételre jelentkezők képviseletére jogosult gazdasági szereplő az EKR-ben elektronikus úton teendő nyilatkozatok megtételekor az egyes közös ajánlattevők vagy részvételre jelentkezők képviseletében eljárhat. Ajánlatkérő felhívja ajánlattevők figyelmét, hogy a Kbt. 35. § (3) bekezdése alapján a közös ajánlattevők képviseletében tett minden nyilatkozatnak egyértelműen tartalmaznia kell a közös ajánlattevők megjelölését. 12. Ajánlattevő köteles ajánlatában csatolni a közbeszerzési dokumentumok részét képező árazatlan költségvetést, valamennyi tételére kiterjedően beárazva, cégszerűen aláírva. Felhívjuk a tisztelt Ajánlattevő figyelmét, hogy a kiadott árazatlan költségvetés tételein és a benne szereplő mennyiségeken nem módosíthat, azokat nem egészítheti ki. Amennyiben a költségvetésben szereplő tételek helyett mást kíván megajánlani, köteles a megajánlott termék egyenértékűségét a 321/2015. (X.30) Korm. rendelet 46. § (3)-(4) bekezdése alapján igazolni. 13. Ajánlatkérő nem teszi lehetővé a nyertes ajánlattevő(k) számára a szerződés teljesítése érdekében gazdálkodó szervezet (projekttársaság) létrehozását. 14. Ajánlatkérő az ajánlattételt ajánlati biztosítékhoz nem köti. 15. Ajánlatkérő felhívja a figyelmet arra, hogy az ajánlatban csatolt dokumentumok üzleti titokká nyilvánítása kizárólag a Kbt. 44. § szerinti előírásoknak megfelelően lehetséges. Az üzleti titkot tartalmazó dokumentum elkülönített elhelyezésére az EKR-ben erre szolgáló funkciót alkalmazza. (EKRr 11. § (4) bek.). 16. Ajánlatkérő alkalmazza a Kbt. 81. § (4) - (5) bekezdés rendelkezéseit. 17. Ajánlatkérő jelen eljárásban alkalmazza a Kbt. 75. § (2) bekezdés e) pontját. 18. Az ajánlatnak tartalmaznia kell a felhívásban külön ki nem em",
+  //     phase: "E60 - Szerződéskötési-, teljesítési szakasz",
+  //     phase_en: "Contracting and performance phase",
+  //     place: "HU MAGYARORSZÁG",
+  //     sid: "EKR000835312021",
+  //     eid: "8799438370123",
+  //     awarded_value: "299000000.00",
+  //     awarded_currency: "HUF",
+  //     awarded_value_eur: "819784.50",
+  //     purchaser: {
+  //       id: 4895,
+  //       sid: 8796421322032,
+  //       name: "Szent István Király Múzeum"
+  //     },
+     
+  //   }
+    
+  return (
+    <div className="App">     
+      <div className='content'>
+        <h1>Welcome to {title}</h1>
+        {/* <p>Belolw are the latest tenders{data} </p> cannot aoutput object direct inside return statement in jsx */}
+      </div>
+    </div>
+  ); 
+}
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+export default App; -->
