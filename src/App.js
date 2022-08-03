@@ -1,15 +1,27 @@
 // root component
+import { Container } from "react-bootstrap";
 
-function App() {
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HomeScreen from './components/HomeScreen';
+const App=()=> {
 
   const title = 'Tender App';
 
   return (
-    <div className="App">     
-      <div className='content'>
-        <h1>Welcome to {title}</h1>
-      </div>
-    </div>
+    <>
+      <Header />
+      <main className="py-3">
+         <Container>
+          
+          {/* <h1>Welcome to {title}</h1> */}
+          <HomeScreen />
+         
+         </Container>
+
+      </main>
+      <Footer />
+    </>
   ); 
 }
 
