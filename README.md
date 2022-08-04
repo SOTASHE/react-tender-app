@@ -39,13 +39,13 @@ After downloading the repo you can cd into the `react-tender-app` and then open 
 $ npm install
 ```
 
-before  running the application with the live-server first start the json live server with following command. make sure you're on the root fold with file name 'data;
+before  running the application with the live-server first start the json live server with the following command. make sure you're on the root folder with file name 'data;
 
 ```bash
 $ npx json-server --watch data/db.json --port 8000
 ```
 
-now you can run the follpowing to start the frontend:
+now you can run the following to start the frontend:
 ```bash
 $ cd react-tender-app
 $ npm start
