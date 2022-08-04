@@ -1,5 +1,5 @@
 
-﻿## react-tender-app
+## react-tender-app
 web app that displays the 10 latest available tenders. The application should also allow the businessman to search for available tenders through their title and description.
 
 
