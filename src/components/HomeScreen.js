@@ -2,7 +2,9 @@
 import { Col, Row } from 'react-bootstrap'
 
 import{useState, useEffect} from 'react'
-// import tenders from '../Tenders'
+
+
+// import Tender from './Tender'
 
 const HomeScreen = () => {
 
@@ -30,33 +32,24 @@ const HomeScreen = () => {
 
   return (
     <>
-      <h1>Lasted Ten Tenders</h1>
+      <h1>Latest Tenders</h1>
       <Row>
 
-    {/* dsiplaythe 10  data or tenders */}
-              {  if data && data.map(tender => (
-                
-                  <Col key={tender.id}>
-                      <div>
-                          <h3>{tender.title}</h3>
-                          <p>{tender.description}</p>
-                      </div>
-                  </Col>
-                ))}
+        {data && data.slice(0,10).map(tender => {
+          return (
+            <Col key={tender.id} sm={12} md={6} lg={4} xl={3}>
+              <h2>{tender.title}</h2>
+              <p>
+                {tender.description.length > 100
+                  ? tender.description.slice(0, 100) + "..."
+                  : tender.description}
+              </p>
 
-
-              {/* {tenders.map((tender) => (
-            
-          <Col key={tender.id} sm={12} md={6} lg={4} xl={3}>
-            <h3>{tender.title}</h3>
-                      <p>{tender.description}</p>
-                      <p>{tender.price}</p>
-                      <p>{tender.countInStock}</p>
-                      <p>{tender.rating}</p>
-                      <p>{tender.numReviews}</p>
-                      
-          </Col>
-        ))} */}
+               {/* <Tender tender={tender} /> */}
+            </Col>
+          );
+        }
+        )}
       </Row>
     </>
   );

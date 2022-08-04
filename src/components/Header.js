@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { BrowserRouter, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -17,6 +17,7 @@ const Header = () => {
 
   return (
     <header>
+    
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <Navbar.Brand>Tender App</Navbar.Brand>
@@ -26,7 +27,7 @@ const Header = () => {
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/about">About</Nav.Link>
             </Nav>
-
+                
             <Form className="d-flex">
               <Form.Control
                 type="search"
@@ -38,7 +39,8 @@ const Header = () => {
             </Form>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
+        </Navbar>
+      
     </header>
   );
 };
