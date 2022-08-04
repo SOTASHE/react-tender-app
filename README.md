@@ -7,7 +7,7 @@ web app that displays the 10 latest available tenders. The application should al
 >  This website is a fully responsive react web app and it is also using the [React Router](https://reacttraining.com/react-router/) to its navigation. This webapp is also using [ the Tenders Guru API]([https://tenders.guru/hu/api],).
 Please do note that the the Tenders Guru API has some errors. Their data is not in a right formart.
 
-I had to pull the whole day then cleen it and place it on json server. Spent a lot of time doing that.
+I had to pull the whole data then clean it and place it on json server. Spent a lot of time doing that.
 
 
 
