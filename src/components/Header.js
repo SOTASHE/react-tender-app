@@ -4,8 +4,11 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { BrowserRouter, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
 
+import { useState } from 'react'
+import { useEffect } from 'react'
+
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
-import SearchBox from "./SearchBox";
+// import SearchBox from "./SearchBox";
 
 
 import Form from "react-bootstrap/Form";
@@ -13,11 +16,21 @@ import Button from "react-bootstrap/Button";
 
 
 
-const Header = () => {
+
+const Header = ({ history }) => {
+  const [keyword, setKeyword] = useState("");
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    if (keyword.trim()) {
+      history.push(`/search/${keyword}`);
+    } else {
+      history.push("/");
+    }
+  };
 
   return (
     <header>
-    
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <Navbar.Brand>Tender App</Navbar.Brand>
@@ -27,20 +40,23 @@ const Header = () => {
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/about">About</Nav.Link>
             </Nav>
-                
-            <Form className="d-flex">
+
+            <Form className="d-flex" onSubmit={submitHandler} inline>
               <Form.Control
+                name="q"
+                onChange={(e) => setKeyword(e.target.value)}
+                placeholder="Search for tenders..."
                 type="search"
-                placeholder="Search"
                 className="me-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success">Search</Button>
+              <Button type="submit" variant="outline-success">
+                Search
+              </Button>
             </Form>
           </Navbar.Collapse>
         </Container>
-        </Navbar>
-      
+      </Navbar>
     </header>
   );
 };
