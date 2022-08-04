@@ -1,4 +1,6 @@
 
+
+
 ## react-tender-app
 web app that displays the 10 latest available tenders. The application should also allow the businessman to search for available tenders through their title and description.
 
@@ -50,6 +52,12 @@ now you can run the following to start the frontend:
 $ cd react-tender-app
 $ npm start
 ```
+
+
+
+Assessment 1 and 2 can be found here [Snaye](https://github.com/SOTASHE/react-tender-app/blob/SOTASHE-Technical-asssessment(task1n2)/Task1an2.zip).
+
+
 
 All the assets are already included so you can run the application and it will work. 
 
