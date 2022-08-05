@@ -55,7 +55,7 @@ $ npm start
 
 
 
-Assessment 1(js) , 2(js) and 3(sql) can be found here [JS and SQ tasks](https://github.com/SOTASHE/react-tender-app/branches).
+Assessment 1(js) , 2(js) and 3(sql) can be found here [JS and SQL tasks](https://github.com/SOTASHE/react-tender-app/branches).
 
 
 
