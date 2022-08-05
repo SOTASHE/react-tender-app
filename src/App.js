@@ -7,9 +7,18 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomeScreen from './components/HomeScreen';
 import DetailTender from './components/DetailTender';
-const App=()=> {
+const App = (tenders,data, query) => {
+  // const title = 'Tender App';
 
-  const title = 'Tender App';
+  console.log(query);
+
+    // const seacrh = (data) => {
+    //   console.log(data);
+    //   Object.values(data).filter((tender) =>
+    //     tender.title.toLowerCase().includes(query.toLowerCase())
+    //   );
+    // };
+    // console(seacrh(data));
 
   return (
     <Router>
@@ -19,16 +28,14 @@ const App=()=> {
           <Switch>
             <Route exact path="/" component={HomeScreen} />
             <Route path="/detail/:id" component={DetailTender} />
-            
-            
- 
+
             {/* <Route path="/about" component={About} /> */}
           </Switch>
         </div>
       </main>
       <Footer />
     </Router>
-  ); 
-}
+  );
+};
 
 export default App;

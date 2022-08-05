@@ -16,6 +16,15 @@ h2 {
   padding: 0.5rem 0;
 }
 
+.tender-title
+{
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+
+  text-align: center;
+  color: green;
+}
+
 
 
 /* blog previews / list */
@@ -43,3 +52,16 @@ h2 {
   
 }
 
+
+
+/* Style search */
+.search{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
