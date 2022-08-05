@@ -55,7 +55,7 @@ $ npm start
 
 
 
-Assessment 1 and 2 can be found here [Snaye](https://github.com/SOTASHE/react-tender-app/blob/SOTASHE-Technical-asssessment(task1n2)/Task1an2.zip).
+Assessment 1(js) , 2(js) and 3(sql) can be found here [JS and SQ tasks](https://github.com/SOTASHE/react-tender-app/branches).
 
 
 
