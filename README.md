@@ -54,9 +54,6 @@ $ npm start
 ```
 
 
-All the assets are already included so you can run the application and it will work. 
-Assessment 1(js) , 2(js) and 3(sql) can be found here [JS and SQL tasks](https://github.com/SOTASHE/react-tender-app/branches).
-
 
 
 Happy Coding!
